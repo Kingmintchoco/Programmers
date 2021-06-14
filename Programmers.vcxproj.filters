@@ -16,11 +16,8 @@
     <Filter Include="소스 파일\Level1">
       <UniqueIdentifier>{4056f542-fabf-4f68-9a85-2473e9eda315}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\2021 kakao intern">
-      <UniqueIdentifier>{2c2817e9-6f30-440a-948d-8812a2aaad99}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\SKILLCHECK">
-      <UniqueIdentifier>{5a1776ab-e1a6-452d-8e8b-5a7d70fabe6b}</UniqueIdentifier>
+    <Filter Include="소스 파일\Level2">
+      <UniqueIdentifier>{bff23f3e-cb61-4d22-90ff-a20a7985f364}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -56,15 +53,6 @@
     </ClCompile>
     <ClCompile Include="폰켓몬.cpp">
       <Filter>소스 파일\Level1</Filter>
-    </ClCompile>
-    <ClCompile Include="1.cpp">
-      <Filter>소스 파일\2021 kakao intern</Filter>
-    </ClCompile>
-    <ClCompile Include="2.cpp">
-      <Filter>소스 파일\2021 kakao intern</Filter>
-    </ClCompile>
-    <ClCompile Include="3cpp.cpp">
-      <Filter>소스 파일\2021 kakao intern</Filter>
     </ClCompile>
     <ClCompile Include="체육복도둑.cpp">
       <Filter>소스 파일\Level1</Filter>
@@ -104,6 +92,33 @@
     </ClCompile>
     <ClCompile Include="약수의 합.cpp">
       <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="올바른 괄호.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="최댓값과 최솟값.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="피보나치의 수.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="최솟값 만들기.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="124나라의 숫자.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="N개의 최소공배수.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="X가장 큰 정사각형 찾기.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 큰 수.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="JadenCase.cpp">
+      <Filter>소스 파일\Level2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
