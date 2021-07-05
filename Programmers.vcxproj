@@ -155,6 +155,7 @@
     <ClCompile Include="문자열을 정수로 바꾸기.cpp" />
     <ClCompile Include="소수만들기.cpp" />
     <ClCompile Include="수포자.cpp" />
+    <ClCompile Include="숫자의 표현.cpp" />
     <ClCompile Include="신규아이디.cpp" />
     <ClCompile Include="약수의 개수와 덧셈.cpp" />
     <ClCompile Include="약수의 합.cpp" />
