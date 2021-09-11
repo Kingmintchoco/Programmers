@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int solution(int n) {
+int NumberSolution(int n) {
     int answer = 0;
 
     int cnt = 0;

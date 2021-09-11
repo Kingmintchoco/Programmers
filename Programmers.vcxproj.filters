@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\Level2">
       <UniqueIdentifier>{bff23f3e-cb61-4d22-90ff-a20a7985f364}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\kakao">
+      <UniqueIdentifier>{2f6dc888-f972-4fdd-9aa4-36ae280c92d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="py.cpp">
@@ -122,6 +125,24 @@
     </ClCompile>
     <ClCompile Include="숫자의 표현.cpp">
       <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="행렬의 곱셈.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="부족한 금액 계산하기.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="상호평가.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="복서 정렬하기.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="숫자 문자열과 영단어.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="test1.cpp">
+      <Filter>소스 파일\kakao</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -144,6 +144,7 @@
     <ClCompile Include="k번째수.cpp" />
     <ClCompile Include="N개의 최소공배수.cpp" />
     <ClCompile Include="py.cpp" />
+    <ClCompile Include="test1.cpp" />
     <ClCompile Include="x만큼 간격이 있는 n개의 숫자.cpp" />
     <ClCompile Include="X가장 큰 정사각형 찾기.cpp" />
     <ClCompile Include="가장 큰 수.cpp" />
@@ -153,8 +154,12 @@
     <ClCompile Include="문자열 다루기.cpp" />
     <ClCompile Include="문자열 이상하게 만들기.cpp" />
     <ClCompile Include="문자열을 정수로 바꾸기.cpp" />
+    <ClCompile Include="복서 정렬하기.cpp" />
+    <ClCompile Include="부족한 금액 계산하기.cpp" />
+    <ClCompile Include="상호평가.cpp" />
     <ClCompile Include="소수만들기.cpp" />
     <ClCompile Include="수포자.cpp" />
+    <ClCompile Include="숫자 문자열과 영단어.cpp" />
     <ClCompile Include="숫자의 표현.cpp" />
     <ClCompile Include="신규아이디.cpp" />
     <ClCompile Include="약수의 개수와 덧셈.cpp" />
@@ -173,6 +178,7 @@
     <ClCompile Include="폰켓몬.cpp" />
     <ClCompile Include="피보나치의 수.cpp" />
     <ClCompile Include="핸드폰가리기.cpp" />
+    <ClCompile Include="행렬의 곱셈.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
