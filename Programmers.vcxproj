@@ -171,6 +171,7 @@
     <ClCompile Include="완주X.cpp" />
     <ClCompile Include="자연수 뒤집어 배열로 만들기.cpp" />
     <ClCompile Include="정수 제곱근 판별.cpp" />
+    <ClCompile Include="직사각형.cpp" />
     <ClCompile Include="직사각형별찍기.cpp" />
     <ClCompile Include="짝수와 홀수.cpp" />
     <ClCompile Include="짝지어 제거하기.cpp" />

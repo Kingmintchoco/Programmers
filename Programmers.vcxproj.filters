@@ -153,5 +153,8 @@
     <ClCompile Include="짝지어 제거하기.cpp">
       <Filter>소스 파일\Level2</Filter>
     </ClCompile>
+    <ClCompile Include="직사각형.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
