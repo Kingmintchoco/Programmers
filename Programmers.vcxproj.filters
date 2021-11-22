@@ -144,5 +144,14 @@
     <ClCompile Include="test1.cpp">
       <Filter>소스 파일\kakao</Filter>
     </ClCompile>
+    <ClCompile Include="없는 숫자 더하기.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="다음 큰 숫자.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="짝지어 제거하기.cpp">
+      <Filter>소스 파일\Level2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

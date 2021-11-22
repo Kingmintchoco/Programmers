@@ -148,6 +148,7 @@
     <ClCompile Include="x만큼 간격이 있는 n개의 숫자.cpp" />
     <ClCompile Include="X가장 큰 정사각형 찾기.cpp" />
     <ClCompile Include="가장 큰 수.cpp" />
+    <ClCompile Include="다음 큰 숫자.cpp" />
     <ClCompile Include="다트게임.cpp" />
     <ClCompile Include="문자열 내 마음대로 정렬하기.cpp" />
     <ClCompile Include="문자열 내림차순으로 정렬하기.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="신규아이디.cpp" />
     <ClCompile Include="약수의 개수와 덧셈.cpp" />
     <ClCompile Include="약수의 합.cpp" />
+    <ClCompile Include="없는 숫자 더하기.cpp" />
     <ClCompile Include="예산.cpp" />
     <ClCompile Include="올바른 괄호.cpp" />
     <ClCompile Include="완주X.cpp" />
@@ -171,6 +173,7 @@
     <ClCompile Include="정수 제곱근 판별.cpp" />
     <ClCompile Include="직사각형별찍기.cpp" />
     <ClCompile Include="짝수와 홀수.cpp" />
+    <ClCompile Include="짝지어 제거하기.cpp" />
     <ClCompile Include="체육복도둑.cpp" />
     <ClCompile Include="최대공약수와 최소공배수.cpp" />
     <ClCompile Include="최댓값과 최솟값.cpp" />
