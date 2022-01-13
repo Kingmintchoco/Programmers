@@ -14,6 +14,8 @@ int main(){
         ++c;
         d *= 10;
     }
-
-    cout << sum << endl;
+    
+    res += ((n - sum) * c);
+    
+    cout << res << endl;
 }
