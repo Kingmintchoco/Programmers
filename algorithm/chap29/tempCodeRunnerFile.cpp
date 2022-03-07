@@ -19,6 +19,4 @@ int main() {
             tmp /= 10;
         }
     }
-
-    cout << cnt << endl;
 }

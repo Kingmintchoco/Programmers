@@ -13,7 +13,10 @@ int main(){
         if(i < 10){
             if(i == 3) cnt++;
         }else{
-            if(i % 10 == 3) cnt++;
+            if(i % 10 == 3) {
+                cnt++;
+                cout << i << endl;
+                }
         }
     }
 

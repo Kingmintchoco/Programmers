@@ -21,4 +21,8 @@ int main(){
 
     int n;
     cin >> n;
+
+    int tmp = three(n);
+    cout << tmp << endl;
+    // cout << three(n) << endl;
 }
