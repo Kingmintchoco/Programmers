@@ -16,10 +16,7 @@ vector <int> bubbleSort(vector <int> v){
                 if(v[j] > 0){
                     swap(v[j], v[j + 1]);
                 }
-            }else{
-                if(v[j] > v[j + 1]) swap(v[j], v[j + 1]);
             }
-
             // if(v[j] > v[j + 1]) swap(v[j], v[j + 1]);
         }
     }
@@ -44,5 +41,4 @@ int main(){
     for(int i = 0; i < v.size(); ++i){
         cout << v[i] << " ";
     }
-    
 }
