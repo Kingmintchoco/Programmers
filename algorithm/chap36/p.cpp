@@ -21,6 +21,21 @@ vector <int> insertSort(vector <int> v){
     return v;
 }
 
+void insertSort(int arr[], int size){
+    int i, j, tmp;
+    for(i = 1; i < size; ++i){
+        tmp = arr[i];
+
+        for(j = i - 1; j >= 0; --j){
+            if(arr[j] > tmp){
+                arr[j + 1] = arr[j];
+            }else break;
+        }
+
+        arr[j + 1] = tmp;
+    }
+}
+
 int main(){
     freopen("p.txt", "rt", stdin);
     int n;
