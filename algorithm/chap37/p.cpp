@@ -49,13 +49,13 @@ int main(){
             for(int j = cache_size - 1; j >= 1; j--){
                 cache[j] = cache[j - 1];
             }
-            cache[0] = cur;
         }else{  // cache hit
             for(int j = pos; j >= 1; j--){
                 cache[j] = cache[j - 1];
             }
-            cache[0] = cur;
         }
+
+        cache[0] = cur;
     }
 
     for(int it = 0; it < cache_size; ++it){
