@@ -1,23 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
-
-void swap(int &a, int &b){
-    int temp = a;
-    a = b;
-    b = temp;
-}
-
-vector <int> bubbleSort(vector<int> v){
-    for(int i = 0; i < v.size() - 1; ++i){
-        for(int j = 0; j < v.size() - 1 + i; ++j){
-            if(v[j] > v[j + 1]) swap(v[j], v[j + 1]);
-        }
-    }
-
-    return v;
-}
 
 int main(){
     freopen("p.txt", "rt", stdin);
@@ -46,11 +31,7 @@ int main(){
         }
     }
 
-    for(int i = 0; i < c.size(); ++i){
-        cout << c[i] << " ";
-    }cout << endl;
-
-    c = bubbleSort(c);
+    sort(c.begin(), c.end());
     for(int i = 0; i < c.size(); ++i){
         cout << c[i] << " ";
     }
