@@ -23,17 +23,19 @@ int count(int s){
 
 int main(){
     freopen("p.txt", "rt", stdin);
-    
-    int m, i, start = 1, end = 0, mid, res;
+
+    int m, i, tmp, start = 1, end = 0, mid, res, max = -2147000000;
     cin >> n >> m;
-    for(i = 1; i <= n; ++i){
-        v.push_back(i);
-        end += i;
+    for(i = 0; i <= n; ++i){
+        cin >> tmp;
+        v.push_back(tmp);
+        end += tmp;
+        if(v[i] > max) max = v[i];
     }
 
     while(start <= end){
         mid = (start + end)/2;
-        if(count(mid) <= m){
+        if(mid >= max && count(mid) <= m){
             res = mid;
             end = mid - 1;
         }else start = mid + 1;
