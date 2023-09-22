@@ -12,3 +12,6 @@
 
 # Ignore pptx files
 *.pptx
+
+# Ignore DS_Store dir
+.DS_Store
