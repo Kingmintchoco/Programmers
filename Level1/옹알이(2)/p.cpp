@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ int solution(vector<string> babbling) {
 }
 
 int main(){
-    freopen("p.txt", "rt", stdin);
+    freopen("p2.txt", "rt", stdin);
 
     int n;
     string s;
