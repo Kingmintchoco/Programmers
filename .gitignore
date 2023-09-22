@@ -1,14 +1,14 @@
 # Ignore all
 *
 
+# Ignore txt files
+*.txt
+
+# Ignore pptx files
+*.pptx
+
 # Unignore all with extensions
 !*.*
 
 # Unignore all dirs
 !*/
-
-# Ignore all pptx
-*.pptx
-
-# Ignore all txt
-*.txt
