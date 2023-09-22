@@ -1,8 +1,0 @@
-3 3
-SOO
-OOO
-OOO
-3
-E 2
-S 2
-W 1
