@@ -1,0 +1,11 @@
+3 10
+Jeju
+Pangyo
+Seoul
+NewYork
+LA
+Jeju
+Pangyo
+Seoul
+NewYork
+LA

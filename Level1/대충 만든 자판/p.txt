@@ -1,0 +1,6 @@
+2
+ABCAD
+BCEFD
+2
+ABCD
+AABB

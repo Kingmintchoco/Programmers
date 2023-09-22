@@ -1,0 +1,10 @@
+3 9
+tank
+kick
+know
+wheel
+land
+dream
+mother
+robot
+tank
