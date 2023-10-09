@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
@@ -12,40 +13,41 @@ void init(){
 int solution(string s) {
     int answer = 0;
 
-    int cur = 0, a = 1, b = 0;
-    char x = s[cur];
-    while(1){
-        if(cur == (s.size() - 1)){
-            answer++;
-            break;
-        }
+    string str = s;
+    stack <char> stk;
+    stk.push(str[0]);
 
+    int cur = 1;
+    while(1){
         if(cur >= s.size()) break;
 
-        int next = cur + 1;
-
-        if(x == s[next]){
-            a++;
-        }else{
-            b++;
+        if(stk.empty()){
+            stk.push(str[cur]);
+            cur++;
+            continue;
         }
 
-        if(a == b){
-            answer++;
-            
-            // init
-            cur += 2;
-            x = s[cur];
-            a = 1, b = 0;
+        if(stk.top() == str[cur]){  // 같은 글자일 때
+            stk.push(stk.top());
+            cur++;
+            continue;
+        }
+
+        if(stk.top() != str[cur]){  // 다른 글자일 때
+            stk.pop();
+            cur++;
+            if(stk.empty()) answer++;
         }
     }
+
+    if(!stk.empty()) answer += 1;
 
     return answer;
 }
 
 int main(){
     init();
-    freopen("p.txt", "rt", stdin);
+    freopen("p3.txt", "rt", stdin);
 
     string s;
     cin >> s;
