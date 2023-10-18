@@ -17,6 +17,9 @@
         "string": "cpp",
         "string_view": "cpp",
         "unordered_map": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "iosfwd": "cpp",
+        "bitset": "cpp",
+        "queue": "cpp"
     }
 }
