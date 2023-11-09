@@ -1,30 +1,29 @@
 #include <iostream>
 #include <algorithm>
-#include <string>
 #include <vector>
 
 using namespace std;
 
-long long solution(int n, vector<int> times) {
-    long long answer = (long long)1000000000 * (long long)1000000000;
+long long solution(int n, vector <int> times){
+    long long answer = LLONG_MAX;
 
     sort(times.begin(), times.end());
 
-    long long l = 0, r = (long long) n * (long long)times.back();   // times.back() = times[times.size() - 1]
-    long long mid = (l + r) / 2;
-
+    // r: 최악의 경우(모든 사람이 심사 시간이 가장 오래 걸리는 심사관에게 심사받았을 경우)
+    long long l = 0, r = (long long) times.back() * (long long) n;
+    long long mid = (l + r)/2;
     while(l <= r){
-        mid = (l + r) / 2;
+        mid = (l + r)/2;    // 걸리는 시간
 
-        long long ret = 0;    // 통과한 전체 인원 수
+        long long cnt = 0;  // 통과할 수 있는 인원 수
         for(int i = 0; i < times.size(); ++i){
-            ret += (mid / times[i]);
+            cnt += (mid / times[i]);
         }
 
-        if(ret >= n){        // 시간을 더 줄일 수 있는 경우
-            if(answer > mid) answer = mid;
+        if(cnt >= n){   // 통과 인원 >= 총 인원 == 시간을 줄일 수 있는 경우
+            answer = min(answer, mid);
             r = mid - 1;
-        }else{              // 시간을 늘려야 하는 경우
+        }else{          // 통과 인원 < 총 인원 == 시간을 늘려야 하는 경우
             l = mid + 1;
         }
     }
@@ -35,13 +34,13 @@ long long solution(int n, vector<int> times) {
 int main(){
     freopen("p.txt", "rt", stdin);
 
-    int n, m;
+    int n, m, time;
     vector <int> times;
 
     cin >> n >> m;
-    while(m--){
-        int tmp; cin >> tmp;
-        times.push_back(tmp);
+    for(int i = 0; i < m; ++i){
+        cin >> time;
+        times.push_back(time);
     }
 
     long long ans = solution(n, times);
