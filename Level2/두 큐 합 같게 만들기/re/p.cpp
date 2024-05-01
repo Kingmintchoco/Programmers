@@ -22,22 +22,21 @@ int solution(vector<int> q1, vector<int> q2) {
     // 두 큐에 존재하는 원소의 값이 홀수일 경우 절대 두 큐의 합을 같게 만들 수 없다.
     if(total % 2 != 0) return -1;
 
-    int p1 = 0, p2 = 0, len = q1.size();
     while(1){
         if(a == b && (a + b) == total) break;
 
-        if(a == 0 || b == 0 || cnt >= (len * 4)) return -1;
+        if(q1.size() == 0 || q2.size() == 0) return -1;
 
         if(a < b){  // q1의 원소합이 q2의 원소합보다 작을 때 => q2에 값을 받아 온다.
-            a += q2[p2];
-            b -= q2[p2];
-            q1.push_back(q2[p2]);
-            p2++;
+            a += q2[0];
+            b -= q2[0];
+            q1.push_back(q2[0]);
+            q2.erase(q2.begin());
         }else{
-            b += q1[p1];
-            a -= q1[p1];
-            q2.push_back(q1[p1]);
-            p1++;
+            b += q1[0];
+            a -= q1[0];
+            q2.push_back(q1[0]);
+            q1.erase(q1.begin());
         }
 
         cnt++;
