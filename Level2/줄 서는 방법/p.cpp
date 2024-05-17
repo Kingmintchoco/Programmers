@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <queue>
 
 using namespace std;
+
 
 long long factorial(int n){
     if(n <= 1) return 1;
@@ -11,32 +11,29 @@ long long factorial(int n){
 }
 
 vector<int> solution(int n, long long k) {
-    vector<int> answer;
+    vector<int> answer, v;
 
-    for(int i = 1; i <= n; ++i) answer.push_back(i);
+    for(int i = 1; i <= n; ++i) 
+        v.push_back(i);
+    
+    if(k == 1)
+        return v;
+    
+    k--;
+    long long pre = factorial(n);
+    long long mod, div;
+    while(v.size() != 1){
+        pre /= n;
+        mod = k % pre;
+        div = k / pre;
 
-    /*
-    [ 시간 초과 ]
-    for(int i = 1; i <= n; ++i) answer.push_back(i);
+        answer.push_back(v[div]);
+        v.erase(v.begin() + div);
 
-    long long cnt = 1;
-    do{
-        if(cnt == k) break;
-        cnt++; 
-    }while(next_permutation(answer.begin(), answer.end()));
-    */
-
-    queue <vector <int> > q;
-    do{
-        q.push(answer);
-    }while(next_permutation(answer.begin(), answer.end()));
-
-    while(!q.empty()){
-        vector <int> v = q.front(); q.pop();
-        for(auto vv : v) cout << vv << " ";
-        cout << "\n";
+        k = mod;
+        n--;
     }
-
+    answer.push_back(v[0]);
 
     return answer;
 }
